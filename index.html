@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musik Web</title>
+    <!-- Fav Icon -->
+    <link rel="icon" href="./img/fav.png" type="image/png" />
+    <!-- My Css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h2>Musik Web</h2>
+      <img src="./img/hero.jpg" alt="" />
+    </header>
+
+    <nav>
+      <a href="#musik">Musik</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#paket">Pilihan Paket</a>
+    </nav>
+
+    <div class="container-content">
+      <section class="music" id="musik">
+        <div class="container-music">
+          <div class="container-playlist">
+            <div class="img-song active">
+              <h1>Musik</h1>
+              <img src="./img/song.jpg" alt="" />
+            </div>
+            <audio id="audio-player" controls>
+              <source src="#" type="audio/mpeg" />
+              Your browser does not support the audio element.
+            </audio>
+            <div class="list-song">
+              <h3>Indonesia</h3>
+              <ul id="playlistIndonesia" class="playlist">
+                <li><a href="./music/indo/Geisha - Karena Kamu.mp3">Geisha - Karena Kamu</a></li>
+                <li><a href="./music/indo/MAHALINI - SIAL.mp3">Mahalini - SIAL</a></li>
+                <li><a href="./music/indo/nadhif basalamah - penjaga hati.mp3">Nadhif Basalamah - Penjaga Hati</a></li>
+                <li><a href="./music/indo/Anggi Marito - Tak Segampang Itu.mp3">Anggi Marito - Tak Segampang Itu</a></li>
+                <li><a href="./music/indo/Yura Yunita - Dunia Tipu-Tipu.mp3">Yura Yunita - Dunia Tipu-Tipu</a></li>
+              </ul>
+            </div>
+
+            <div class="list-song">
+              <h3>Barat</h3>
+              <ul id="playlistBarat" class="playlist">
+                <li><a href="./music/barat/Memories - Cover  (Maroon 5).mp3">Memories - Maroon 5</a></li>
+                <li><a href="./music/barat/Bad Liar - Imagine Dragons.mp3">Bad Liar - Imagine Dragons</a></li>
+                <li><a href="./music/barat/AJR - World's Smallest Violin.mp3">AJR - World's Smallest Violin</a></li>
+                <li><a href="./music/barat/Christina Perri - A Thousand Years.mp3">Christina Perri - A Thousand Years</a></li>
+                <li><a href="./music/barat/Lewis Capaldi - Someone You Loved.mp3">Lewis Capaldi - Someone You Loved</a></li>
+              </ul>
+            </div>
+
+            <div class="list-song">
+              <h3>Jepang</h3>
+              <ul id="playlistJepang" class="playlist">
+                <li>
+                  <a href="./music/japan/Asu no Yozora Shoukaihan - Akie秋绘 _ 夏璃夜.mp3"><span class="playButton"></span>Asu no Yozora Shoukaihan</a>
+                </li>
+                <li><a href="./music/japan/DAOKO × 米津玄師『打上花火.mp3">DAOKO × 米津玄師 打上花火</a></li>
+                <li><a href="./music/japan/Majiko - Irony.mp3">Majiko - Irony</a></li>
+                <li><a href="./music/japan/Orion-Acoustic Arrange.mp3">Orion-Acoustic Arrange</a></li>
+                <li><a href="./music/japan/美波「カワキヲアメク」MV.mp3">美波 カワキヲアメク</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <article>
+          <div class="container">
+            <div class="about-img">
+              <img src="./img/about.jpg" alt="" />
+            </div>
+            <div class="content">
+              <div class="kelebihan">
+                <div class="kelebihan-teks">
+                  <h1 id="about">Tentang Kami</h1>
+                  <p>
+                    Musik Web adalah sebuah platform yang didedikasikan untuk para pecinta musik dari berbagai genre dan budaya. Di sini, kami menyediakan akses mudah untuk menikmati koleksi musik yang kaya dan beragam, mulai dari lagu-lagu
+                    terbaru hingga klasik favorit Anda.
+                  </p>
+                </div>
+                <ul>
+                  <li>
+                    <b>Navigasi Sederhana:</b> Temukan lagu yang Anda sukai dengan mudah melalui navigasi sederhana yang disediakan. Dengan beberapa klik, Anda dapat menjelajahi berbagai playlist dan menemukan musik yang sesuai dengan
+                    suasana hati Anda.
+                  </li>
+
+                  <li><b>Kualitas Audio Terbaik:</b> Kami menjamin kualitas audio terbaik untuk pengalaman mendengarkan musik yang memuaskan. Nikmati suara yang jernih dan detail yang memukau dari setiap lagu yang diputar.</li>
+
+                  <li>
+                    <b>Dibuat dengan Cinta:</b> Musik Web dibuat dengan cinta oleh tim kami yang bersemangat tentang musik. Kami berkomitmen untuk menyediakan platform yang menyenangkan dan memuaskan bagi para penggemar musik di seluruh
+                    dunia.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+        <aside>
+          <div class="container">
+            <div class="konten">
+              <h1 id="paket">Pilihan Paket</h1>
+              <table cellspacing="12">
+                <tr>
+                  <th>Paket</th>
+                  <th>Durasi</th>
+                  <th>Iklan</th>
+                  <th>Harga</th>
+                </tr>
+                <tr>
+                  <td class="level">Platinum</td>
+                  <td>12 Bulan</td>
+                  <td>Bebas Iklan</td>
+                  <td>Rp 300.000</td>
+                </tr>
+                <tr>
+                  <td class="level">Gold</td>
+                  <td>6 Bulan</td>
+                  <td>Bebas Iklan</td>
+                  <td>Rp 160.000</td>
+                </tr>
+                <tr>
+                  <td class="level">Silver</td>
+                  <td>3 Bulan</td>
+                  <td>Bebas Iklan</td>
+                  <td>Rp 50.000</td>
+                </tr>
+                <tr>
+                  <td class="level">Bronze</td>
+                  <td>1 Bulan</td>
+                  <td>Bebas Iklan</td>
+                  <td>Rp 30.000</td>
+                </tr>
+              </table>
+              <a href="#">Berlangganan</a>
+              <p>Upgrade sekarang untuk akses ke paket Platinum, Gold, Silver, atau Bronze! Dapatkan manfaat tambahan dan nikmati pengalaman premium kami.</p>
+              <p>
+                Dapatkan akses eksklusif ke koleksi musik premium kami dengan menjadi pelanggan Premium sekarang juga! Langganan Premium kami memberikan Anda akses tanpa batas ke ribuan lagu dari berbagai genre, artis, dan label musik
+                terkenal di seluruh dunia.
+              </p>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+    <footer>Made with <span class="love">❤</span> | Created by <span class="nameFooter">Habib Ahmad</span> | <span class="tahun"></span></footer>
+
+    <!-- My JS -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

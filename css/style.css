@@ -1,0 +1,297 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #2a2354;
+  color: #ff90bc;
+  padding: 60px;
+}
+
+header img {
+  width: 100px;
+  border-radius: 50%;
+  transition: 2s;
+  border: 6px solid white;
+}
+
+header img:hover {
+  transform: rotateY(360deg) scale(1.3);
+}
+
+nav {
+  background-color: #ff90bc;
+  display: flex;
+  color: wheat;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+nav a {
+  margin: auto;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  background-color: #2a2354;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 1s;
+}
+
+h3 {
+  color: #ff90bc;
+}
+
+.container-content {
+  text-align: center;
+}
+
+.img-song img {
+  width: 200px;
+  border-radius: 50%;
+  margin: 30px;
+  animation: putar 6s infinite linear;
+}
+
+/* animasi lagu */
+@keyframes putar {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.music {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.container-music {
+  display: flex;
+  justify-content: center;
+}
+
+.list-song {
+  margin: 0 20px;
+}
+
+.list-song ul {
+  list-style-type: none;
+  padding: 0;
+  border-radius: 5px;
+}
+
+.list-song ul li {
+  background-color: #2a2354;
+  margin: 2px;
+  border-radius: 5px;
+}
+
+.list-song ul li:hover {
+  background-color: #ff90bc;
+}
+
+.list-song ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+/* Ketika aktif */
+
+.list-song ul li a.active,
+.list-song ul li a:hover {
+  background-color: #ff90bc;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.list-song ul li a.active {
+  pointer-events: none;
+  /* Nonaktifkan pointer
+  */
+}
+
+.list-song ul li a.active {
+  animation: naikTurun 0.5s ease infinite;
+}
+
+/* animasi untuk ketika aktif lagunya */
+@keyframes naikTurun {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Tentang Kami */
+main article .container {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+
+#about {
+  padding-top: 100px;
+}
+
+main article .container .about-img img {
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 140px;
+}
+
+main article .content {
+  margin: 10px;
+  width: 600px;
+}
+
+main article .content ul li {
+  margin: 10px;
+  list-style-type: decimal;
+  font-weight: bo;
+}
+
+/* Paket */
+
+#paket {
+  padding-top: 100px;
+}
+
+aside .container {
+  width: 100%;
+}
+
+aside .container .konten {
+  width: 100%;
+}
+
+aside .container .konten p {
+  width: 600px;
+  margin: 20px auto;
+}
+
+table {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  overflow-x: auto;
+}
+
+table tr,
+td {
+  padding: 5px 2px;
+  border: 2px solid #ff90bc;
+  border-radius: 5px;
+}
+
+table th {
+  border-radius: 5px;
+  background-color: #2a2354;
+  color: #ff90bc;
+  padding: 5px 2px;
+}
+
+table .level {
+  background-color: #ff90bc;
+  color: white;
+  font-weight: bold;
+  border: 2px solid #2a2354;
+}
+
+/* Hover table */
+
+table tr:hover {
+  background-color: aquamarine;
+  filter: saturate(150%);
+  cursor: pointer;
+  color: white;
+  transform: scale(0.9);
+  transition: transform 1s ease;
+}
+
+/* Button */
+aside .container a {
+  margin: 10px;
+  display: inline-block;
+  background-color: aquamarine;
+  color: #2a2354;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 1s ease;
+  box-shadow: 5px 5px 5px #2a2354;
+}
+
+aside .container a:hover {
+  margin: 10px;
+  display: inline-block;
+  background-color: #ff90bc;
+  color: white;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transform: scale(0.8);
+  text-transform: uppercase;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #2a2354;
+  color: white;
+  text-align: center;
+  font-size: smaller;
+}
+
+footer .love {
+  color: red;
+  font-size: large;
+  cursor: pointer;
+}
+
+footer .nameFooter {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  main {
+    width: 100%;
+  }
+  aside .container .konten p {
+    width: 300px;
+    margin: 20px auto;
+  }
+}
