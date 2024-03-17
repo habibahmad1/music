@@ -195,6 +195,26 @@ aside .container .konten p {
   margin: 20px auto;
 }
 
+aside .gambar-paket {
+  width: 500px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  filter: grayscale(100%);
+}
+
+aside .gambar-paket:hover {
+  cursor: pointer;
+  filter: grayscale(0);
+}
+
+aside img {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+
 table {
   display: flex;
   width: 100%;
@@ -293,5 +313,8 @@ footer .nameFooter {
   aside .container .konten p {
     width: 300px;
     margin: 20px auto;
+  }
+  aside .gambar-paket {
+    width: 92%;
   }
 }
